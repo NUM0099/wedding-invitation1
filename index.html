@@ -27,7 +27,6 @@
             overflow-x: hidden;
         }
 
-        /* --- Animations --- */
         @keyframes colorShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -54,7 +53,6 @@
             color: white; border: none; padding: 15px 40px; font-size: 1.1rem; font-weight: bold;
             border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
             margin: 30px 0 15px 0;
-            transition: transform 0.3s;
         }
 
         .scroll-hint-wrapper {
@@ -126,150 +124,4 @@
         <div style="position:relative; z-index:10;">
             
             <div class="reveal">
-                <div style="font-size: 1.6rem; font-weight: bold; color: var(--primary-coral);">ශ්‍රී සුභ මංගලම්</div>
-                <div class="couple-names">නිපුන් ❤️ නුවන්ති</div>
-                <img src="wedding_photo.jpg" class="couple-img" alt="Wedding" onerror="this.src='https://via.placeholder.com/500x350?text=Photo+Here';">
-            </div>
-
-            <div class="reveal name-card">
-                <div class="parent-text">
-                    <span class="animated-father-name">එම් ඩබ් ආර් ධම්මික බණ්ඩාර</span> මහතාගේ සහ එම මැතිණියගේ පුත්
-                </div>
-                <h2 class="main-name">නිපුන්</h2>
-            </div>
-
-            <div class="reveal name-card">
-                <div class="parent-text">
-                    <span class="animated-father-name">එම් ඩී නෙවිල්</span> මහතාගේ සහ එම මැතිණියගේ දියණිය
-                </div>
-                <h2 class="main-name">නුවන්ති</h2>
-            </div>
-
-            <div class="reveal">
-                <div style="font-style: italic; margin: 20px 0;">💍 අතිනත ගැනීමේ ප්‍රීතිය නිමිත්තෙන් 💍</div>
-                <div style="font-weight: bold; font-size: 1.4rem;">2026 ජුනි මස 25 වන දින</div>
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Nipun+%26+Nuwanthi&dates=20260625T040000Z/20260625T103000Z&details=We+look+forward+to+seeing+you+at+our+wedding!&location=Serendip+Stone+Bungalow+%26+Hotel,+Sri+Lanka" target="_blank" class="action-btn cal-btn">📅 Add to Google Calendar</a>
-                <div class="countdown">
-                    <div class="timer-box"><span id="d_val">00</span><p>දින</p></div>
-                    <div class="timer-box"><span id="h_val">00</span><p>පැය</p></div>
-                    <div class="timer-box"><span id="m_val">00</span><p>විනාඩි</p></div>
-                    <div class="timer-box"><span id="s_val">00</span><p>තත්පර</p></div>
-                </div>
-            </div>
-
-            <div class="reveal">
-                <div style="font-size: 1.3rem; font-weight: bold; color: var(--primary-coral); margin: 30px 0 10px 0;">📍 Serendip Stone Bungalow & Hotel 📍</div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50045.510173464085!2d80.70192926026648!3d7.300937097710692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3666008096225%3A0x77df49914278ee6!2sSerendip%20Stone%20Bungalow%20%26%20Hotel!5e1!3m2!1sen!2slk!4v1777146377636!5m2!1sen!2slk" width="100%" height="300" style="border:2px solid var(--primary-coral); border-radius:15px; margin-bottom:20px;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <div class="reveal time-card">
-                🕘 උදෑසන 9.30 සිට 🕟 සවස 4.00 දක්වා<br>
-                <span style="font-size: 1rem; color: var(--secondary-pink);">(පෝරුවේ චාරිත්‍ර උදෑසන 10.16 ට)</span>
-            </div>
-
-            <div class="reveal" style="font-size: 1.3rem; margin: 30px 0;">🌸 පැවැත්වෙන ප්‍රිය සම්භාෂණයට සහභාගී වන මෙන් 🌸</div>
-
-            <div class="reveal name-card" style="border: 2px dashed var(--primary-coral); background: #fff;">
-                <div style="font-size: 1.4rem; font-weight: bold; color: var(--primary-coral); margin-bottom: 10px;">💌 ආදරණීය ආරාධනාව 💌</div>
-                <span id="guest-name" style="font-size: 1.8rem; font-weight: bold; color: var(--text-maroon); display: block; margin: 10px 0;">හිතවත් අමුත්තා</span>
-                <p id="invitation-text" style="margin:0; font-size: 1.2rem; color: var(--black);">සහ පවුලේ සැමට කරන ආරාධනාවයි!</p>
-            </div>
-
-            <div class="reveal" style="background: var(--text-maroon); color: white; padding: 25px; border-radius: 15px; margin-top: 20px;">
-                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">✅ පැමිණීම තහවුරු කරන්න</div>
-                <div class="btn-group">
-                    <a href="https://wa.me/94712345678?text=හෙලෝ%2C%20නිපුන්%20සහ%20නුවන්ති%2C%20මම%20ඔබේ%20මංගල%20උත්සවයට%20සහභාගී%20වන%20බව%20සතුටින්%20දන්වා%20සිටිමි." class="action-btn wa-btn" target="_blank">💬 WhatsApp</a>
-                    <a href="tel:0712345678" class="action-btn call-btn">📞 Call Now</a>
-                </div>
-            </div>
-            
-            <div class="reveal final-note">"ඔබේ පැමිණීම අපට සතුටකි"</div>
-            <div style="margin-top: 30px; opacity: 0.4; font-size: 0.9rem;">✿ See you there! ✿</div>
-        </div>
-    </div>
-</div>
-
-<script>
-    const target = new Date(2026, 5, 25, 9, 30, 0).getTime();
-    let isOpened = false;
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-    }, { threshold: 0.1 });
-
-    function handleScroll(event) { if (!isOpened && event.deltaY > 0) openInvitation(); }
-    function handleTouch(event) { if (!isOpened) { let touchEnd = event.touches[0].clientY; if (touchStart - touchEnd > 5) openInvitation(); } }
-
-    function openInvitation() {
-        if (isOpened) return;
-        isOpened = true;
-        document.querySelector('.music-btn').style.display = 'none';
-        document.getElementById('first-page-view').style.opacity = '0';
-        document.getElementById('first-page-view').style.transform = 'translateY(-100%)';
-        setTimeout(() => {
-            document.getElementById('first-page-view').style.display = 'none';
-            document.getElementById('invitation-details').style.display = 'flex';
-            window.scrollTo(0, 0);
-            document.querySelector('.music-btn').style.display = 'flex';
-            setInterval(updateCD, 1000);
-            setInterval(dropHeart, 250);
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-        }, 800);
-    }
-
-    function updateCD() {
-        const now = new Date().getTime();
-        const diff = target - now;
-        if (diff > 0) {
-            document.getElementById("d_val").innerText = Math.floor(diff / 86400000).toString().padStart(2, '0');
-            document.getElementById("h_val").innerText = Math.floor((diff % 86400000) / 3600000).toString().padStart(2, '0');
-            document.getElementById("m_val").innerText = Math.floor((diff % 3600000) / 60000).toString().padStart(2, '0');
-            document.getElementById("s_val").innerText = Math.floor((diff % 60000) / 1000).toString().padStart(2, '0');
-        }
-    }
-
-    function dropHeart() {
-        const h = document.createElement("div");
-        h.className = "heart"; h.innerHTML = "❤️";
-        h.style.left = Math.random() * 100 + "%";
-        h.style.fontSize = (Math.random() * 10 + 15) + "px";
-        h.style.color = ["#ffadad", "#ffd6a5", "#ffc6ff"][Math.floor(Math.random() * 3)];
-        h.style.animationDuration = (Math.random() * 5 + 8) + "s";
-        document.getElementById("mainBox").appendChild(h);
-        setTimeout(() => h.remove(), 12000);
-    }
-
-    function toggleM() {
-        const s = document.getElementById("mS");
-        if (s.paused) { s.play(); document.getElementById("mI").innerText = "⏸️"; }
-        else { s.pause(); document.getElementById("mI").innerText = "🎵"; }
-    }
-
-    // --- පරීක්ෂා කිරීමේ ස්ක්‍රිප්ට් එක ---
-    const urlParams = new URLSearchParams(window.location.search);
-    const n = urlParams.get('invitees_name');
-    
-    if (n) {
-        // අගට වැටෙන හිස්තැන් අයින් කරගන්නවා
-        let rawName = decodeURIComponent(n).trim();
-        let nameToShow = rawName;
-        let textToShow = "සහ පවුලේ සැමට කරන ආරාධනාවයි!"; // Default
-
-        // Regex පාවිච්චි කරලා අන්තිම ඉලක්කම හොයාගන්නවා
-        if (/\s1$/.test(rawName)) {
-            nameToShow = rawName.replace(/\s1$/, "");
-            textToShow = "ඔබට කරන ආරාධනාවයි!";
-        } else if (/\s2$/.test(rawName)) {
-            nameToShow = rawName.replace(/\s2$/, "");
-            textToShow = "ඔබ දෙපළට කරන ආරාධනාවයි!";
-        } else if (/\s3$/.test(rawName)) {
-            nameToShow = rawName.replace(/\s3$/, "");
-            textToShow = "ඔබ සැමට කරන ආරාධනාවයි!";
-        }
-
-        document.getElementById('guest-name').innerText = nameToShow;
-        document.getElementById('invitation-text').innerText = textToShow;
-    }
-</script>
-
-</body>
-</html>
+                <div style="font-size: 1.6rem; font-weight: bold; color: var(--primary-coral);">ශ්‍රී සුභ මංගලම්
